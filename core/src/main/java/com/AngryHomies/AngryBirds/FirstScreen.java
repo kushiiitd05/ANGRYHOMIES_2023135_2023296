@@ -6,6 +6,7 @@ import com.badlogic.gdx.Screen;
 public class FirstScreen implements Screen {
     @Override
     public void show() {
+
         // Prepare your screen here.
     }
 
