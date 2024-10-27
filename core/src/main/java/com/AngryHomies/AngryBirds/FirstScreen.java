@@ -32,8 +32,7 @@ public class FirstScreen implements Screen {
     private String[] loadingStages = {"Loading", "Loading.", "Loading..", "Loading..."};
     private float loadingAnimationTime = 0f;
     private int currentStage = 0;
-
-    // Constructor to pass the game instance
+    
     public FirstScreen(Main game, HashMap<String, Screen> levelScreens, HashMap<String, String> savedScreens) {
         this.game = game;
         this.levelScreens = levelScreens;
