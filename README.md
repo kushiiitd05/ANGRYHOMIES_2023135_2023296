@@ -181,9 +181,13 @@ Enjoy playing AngryHomies!
 ##References
 
 
-OpenAI GPT: Used to assist with  Understanding basic error that we were not aware of .
-Google: Searched for UI/UX and coding references.
-GitHub: Examined samples for UI design and dynamic gameplay.
-YouTube: Tutorials for understanding basic syntax and LibGDX setup(GameFromScratch).
+## OpenAI GPT: 
+Used to assist with  Understanding basic error that we were not aware of .
+## Google: 
+Searched for UI/UX and coding references.
+## GitHub:
+Examined samples for UI design and dynamic gameplay.
+##YouTube: 
+Tutorials for understanding basic syntax and LibGDX setup(GameFromScratch).
 
 
