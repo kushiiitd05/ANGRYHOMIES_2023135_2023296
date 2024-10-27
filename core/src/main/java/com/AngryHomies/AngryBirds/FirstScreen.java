@@ -85,7 +85,7 @@ public class FirstScreen implements Screen {
 
         batch.end();
 
-        if (timeElapsed > 2f) {
+        if (timeElapsed > 8f) {
             levelScreens.put("HomeScreen",new HomeScreen(game,loadingMusic,this.levelScreens,this.savescreen));
             game.setScreen(levelScreens.get("HomeScreen"));
         }
