@@ -113,5 +113,3 @@ public class FirstScreen implements Screen {
 
     }
 }
-   }
-}
