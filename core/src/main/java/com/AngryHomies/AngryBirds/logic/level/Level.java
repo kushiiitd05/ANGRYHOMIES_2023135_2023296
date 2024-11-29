@@ -147,20 +147,16 @@ public abstract class Level implements Screen {
             if (loseScreenDelayTimer >= 2f) {
                 transitionToLoseScreen();
             }
+            return;
         }
     }
     protected void transitionToWinScreen() {
-        if (!levelScreens.containsKey("WinScreen")) {
-            levelScreens.put("WinScreen", new WinScreen(game, levelScreens));
-        }
         isPaused = true;
-        game.setScreen(levelScreens.get("WinScreen"));
+        game.setScreen(new WinScreen(game,levelScreens));
     }
     protected void transitionToLoseScreen() {
-        if (!levelScreens.containsKey("LoseScreen")) {
-            levelScreens.put("LoseScreen", new LoseScreen(game, levelScreens));
-        }
-        game.setScreen(levelScreens.get("LoseScreen"));
+        isPaused = true;
+        game.setScreen(new LoseScreen(game,levelScreens));
     }
 
     private static class BodyState {
