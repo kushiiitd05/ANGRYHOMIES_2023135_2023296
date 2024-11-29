@@ -86,7 +86,7 @@ public abstract class Level implements Screen {
 
     protected InputProcessor previousInputProcessor;
 
-    public static String DEFAULT_SAVE_PATH = System.getProperty("user.home") +  "/OneDrive/Desktop/AngryHomies";
+    public static String DEFAULT_SAVE_PATH = System.getProperty("user.home") +  "/OneDrive/Desktop/AngryHomies/saves/default_save";
 
     public Level(Main game,HashMap<String, Screen> levelScreens,World world) {
         this.game = game;
