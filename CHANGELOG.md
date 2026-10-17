@@ -2,6 +2,8 @@
 
 ## v2.0.0: `v2/polish` (2026-10-17)
 
+**Author:** Kush Tokas (2023296)
+
 A rework of the original course submission. Every file has its own commit; the tables below list each
 file and what changed in it. The reasons (30 bugs with file references, research notes, plan) are in
 [`GAME_IMPROVEMENT_PLAN.md`](GAME_IMPROVEMENT_PLAN.md).
@@ -172,5 +174,7 @@ transitions · camera fly-over, shake, hit-stop, slow motion · 23 generated sou
 | `saves/default_save_LevelTwo.sav` | remove stale Java-serialized save default_save_LevelTwo.sav |
 
 ## v1.0.0: original course submission
+
+**Authors:** Arshpreet Singh Gill (2023135) and Kush Tokas (2023296)
 
 Static GUI → playable LibGDX game with Box2D, three levels, three birds, Java-serialized saves.
