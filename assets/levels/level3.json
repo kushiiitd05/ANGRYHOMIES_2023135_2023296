@@ -1,0 +1,236 @@
+{
+  "id": 3,
+  "name": "Level 3",
+  "stars": [
+    25000,
+    40000,
+    55000
+  ],
+  "birds": [
+    "RED",
+    "BLACK",
+    "YELLOW",
+    "BLACK",
+    "RED"
+  ],
+  "pigs": [
+    {
+      "type": "SMALL",
+      "x": 125.0,
+      "y": 17.9,
+      "w": 16.0,
+      "h": 11.0,
+      "density": 1.0,
+      "radius": 3.0
+    },
+    {
+      "type": "SMALL",
+      "x": 166.5,
+      "y": 17.9,
+      "w": 16.0,
+      "h": 11.0,
+      "density": 1.0,
+      "radius": 3.0
+    },
+    {
+      "type": "KING",
+      "x": 125.0,
+      "y": 47.2,
+      "w": 13.5,
+      "h": 12.0,
+      "density": 2.0,
+      "radius": 5.75
+    },
+    {
+      "type": "KING",
+      "x": 166.5,
+      "y": 47.2,
+      "w": 13.5,
+      "h": 12.0,
+      "density": 2.0,
+      "radius": 5.75
+    },
+    {
+      "type": "SMALL",
+      "x": 125.0,
+      "y": 65.2,
+      "w": 16.0,
+      "h": 11.0,
+      "density": 1.0,
+      "radius": 3.0
+    },
+    {
+      "type": "SMALL",
+      "x": 166.5,
+      "y": 65.2,
+      "w": 16.0,
+      "h": 11.0,
+      "density": 1.0,
+      "radius": 3.0
+    },
+    {
+      "type": "BIG",
+      "x": 145.0,
+      "y": 82.9,
+      "w": 12.5,
+      "h": 10.0,
+      "density": 2.5,
+      "radius": 4.75
+    }
+  ],
+  "blocks": [
+    {
+      "material": "STONE",
+      "texture": "st_stoneblock.png",
+      "x": 115.0,
+      "y": 17.9,
+      "w": 6.0,
+      "h": 25.0,
+      "density": 1.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 135.0,
+      "y": 17.4,
+      "w": 6.0,
+      "h": 25.0,
+      "density": 3.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 155.0,
+      "y": 17.4,
+      "w": 6.0,
+      "h": 25.0,
+      "density": 3.0
+    },
+    {
+      "material": "STONE",
+      "texture": "st_stoneblock.png",
+      "x": 175.0,
+      "y": 17.4,
+      "w": 6.0,
+      "h": 25.0,
+      "density": 1.0
+    },
+    {
+      "material": "GLASS",
+      "texture": "sp_glassblock.png",
+      "x": 124.0,
+      "y": 41.7,
+      "w": 33.0,
+      "h": 4.0,
+      "density": 1.0
+    },
+    {
+      "material": "GLASS",
+      "texture": "sp_glassblock.png",
+      "x": 165.0,
+      "y": 41.7,
+      "w": 33.0,
+      "h": 4.0,
+      "density": 1.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 115.0,
+      "y": 46.2,
+      "w": 5.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "GLASS",
+      "texture": "sp_glassblock.png",
+      "x": 125.0,
+      "y": 61.2,
+      "w": 33.0,
+      "h": 4.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 135.0,
+      "y": 46.7,
+      "w": 5.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 115.0,
+      "y": 65.2,
+      "w": 4.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 135.0,
+      "y": 65.2,
+      "w": 4.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "STONE",
+      "texture": "stone_blocks.png",
+      "x": 145.0,
+      "y": 80.2,
+      "w": 68.0,
+      "h": 2.5,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 155.0,
+      "y": 46.2,
+      "w": 5.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "GLASS",
+      "texture": "sp_glassblock.png",
+      "x": 165.0,
+      "y": 61.2,
+      "w": 33.0,
+      "h": 4.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 175.0,
+      "y": 46.7,
+      "w": 5.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 155.0,
+      "y": 65.2,
+      "w": 4.0,
+      "h": 15.0,
+      "density": 2.0
+    },
+    {
+      "material": "WOOD",
+      "texture": "standing_woodblock.png",
+      "x": 175.0,
+      "y": 65.2,
+      "w": 4.0,
+      "h": 15.0,
+      "density": 2.0
+    }
+  ]
+}
