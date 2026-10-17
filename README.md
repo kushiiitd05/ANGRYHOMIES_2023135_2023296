@@ -53,8 +53,8 @@
 ## Quick start
 
 ```bash
-git clone https://github.com/kushiiitd05/ANGRYHOMIES_2023135_2023296.git
-cd ANGRYHOMIES_2023135_2023296
+git clone https://github.com/kushiiitd05/ANGRY_HOMIES-Inspiredby_angryBirds.git
+cd ANGRY_HOMIES-Inspiredby_angryBirds
 ./gradlew lwjgl3:run        # play
 ./gradlew core:test         # run the 30 unit tests (headless, no window)
 ```
