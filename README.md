@@ -1,203 +1,119 @@
-
 # AngryHomies
 
-**AngryHomies** is a LibGDX-powered game inspired by Angry Birds. It features multiple screens, interactive game elements, and a dynamic GUI that presents fully functional gameplay mechanics, interactive features, and a comprehensive UI flow. This project has evolved from an initial static GUI submission into a fully operational game with enhanced logic, dynamic asset handling, and serialized game states.
+A LibGDX + Box2D slingshot physics game inspired by Angry Birds, built for the IIIT-Delhi
+Advanced Programming course (2023135, 2023296). **v2** reworks the original course submission
+into a smoother, juicier game: real impact physics, material-specific breaking, three special
+moves, animated screens, sound effects, and proper save/load.
 
----
+## Run it
 
-## Github Repository
+Requires **Java 11+** (tested on 22).
 
-[Link to AngryHomies Repository](https://github.com/kushiiitd05/ANGRYHOMIES_2023135_2023296)
-
----
-
-## Platforms
-
-- **Core:** Main module with shared game logic across all platforms.
-- **LWJGL3:** Primary desktop platform using LWJGL3 for execution.
-
----
-
-## Gradle
-
-AngryHomies uses [Gradle](https://gradle.org/) for dependency management and build automation. The Gradle wrapper (`gradlew.bat` or `./gradlew`) allows for seamless task execution.
-
-#### Useful Gradle Tasks:
-- `build`: Builds sources and archives for all projects.
-- `clean`: Removes build folders containing compiled classes and archives.
-- `lwjgl3:run`: Starts the application.
-- `test`: Executes unit tests (if any).
-- `--refresh-dependencies`: Validates and refreshes dependencies.
-
----
-
-## Game Overview
-
-AngryHomies invites players into an interactive experience where birds launch from a slingshot to collide with blocks and pigs. The goal is to eliminate all pigs while navigating the obstacles created by block structures.
-
----
-
-## **Table of Contents**
-1. [Game Setup](#game-setup)
-2. [Running the Game](#running-the-game)
-3. [New Features and Enhancements](#new-features-and-enhancements)
-4. [Class Structure](#class-structure)
-5. [References](#references)
-
----
-
-## Game Setup
-
-#### Steps to Set Up and Run AngryHomies:
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/kushiiitd05/ANGRYHOMIES_2023135_2023296
-   ```
-
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd AngryHomies
-   ```
-
-3. **Run the Game Using Gradle**:
-   ```bash
-   ./gradlew lwjgl3:run
-   ```
-
-4. **Prerequisites**:
-   - Ensure **Java 21** and **Gradle** are installed on your system.
-   - Follow instructions to configure required dependencies.
-
----
-
-## Running the Game
-
-#### **Main Game Flow**
-1. **First Run**: A loading screen (`FirstScreen`) transitions to the **Home Screen**.
-2. **Home Screen**:
-   - **Start Game**: Opens the Level Select screen.
-   - **Load Game**: Loads a previously saved game.
-   - **Quit Game**: Exits the application.
-3. **Gameplay**:
-   - Select a level from the Level Select screen to proceed to gameplay (Level One by default).
-
-#### **Pause Menu**:
-Accessible during gameplay to:
-- **Resume**: Continue the game.
-- **Restart**: Reset and reload the level.
-- **Save Game**: Save the current state and return to the Home Screen.
-- **Exit**: Return to the Home Screen.
-
-#### **Win/Lose Screens**:
-- **Win Screen**: Transition to Level Select upon clearing the level.
-- **Lose Screen**: Retry the level or return to Level Select.
-
-#### **Loading a Saved Game**:
-1. Select **Load Game** from the Home Screen.
-2. Resume gameplay from a saved state.
-
-#### **Exiting the Game**:
-- Quit from the Home Screen to exit the application.
-
----
-
-## New Features and Enhancements
-
-1. **Dynamic Gameplay Features**:
-   - Transitioned from a static GUI to a functional game with **Box2D physics**.
-   - Collision detection and object interactions are dynamically managed using a **CollisionDetector** class.
-
-2. **Advanced Game Elements**:
-   - Birds, pigs, and blocks now include enhanced attributes and methods.
-   - Overloaded constructors for `Bird`, `Pig`, and `Block` allow flexible initialization.
-
-3. **Serialization**:
-   - Implemented a **Serialization Package** for saving and loading game states:
-     - `SerializableBirds`
-     - `SerializableBlocks`
-     - `SerializableBodies`
-   - The `LevelState` class tracks level-specific attributes, ensuring continuity between sessions.
-
-4. **Texture Management**:
-   - Utilized a **Texture Factory** for managing textures dynamically.
-   - Efficient mapping of textures for streamlined asset management.
-
-5. **Test Suite**:
-   - Added a **Test Package** for verifying logic and game physics:
-     - `CollisionDetectorTest`
-     - `LogicTest`
-     - `SlingshotTest`
-
-6. **Updated Class Structure**:
-   - **Packages**:
-     - `collision`: Manages collision detection.
-     - `logic`: Handles slingshot mechanics and trajectory logic.
-     - `assets`: Centralized asset management.
-     - `serializable`: Manages serialized game elements.
-
-7. **Enhanced UI/UX**:
-   - Improved transition animations between screens.
-   - Redesigned pause and win/lose menus for clarity and interactivity.
-   - Added custom fonts and skins for buttons and in-game text.
-
-8. **Gradle Updates**:
-   - Updated `build.gradle` for new dependencies and test configurations.
-
----
-
-## Class Structure
-
-1. **Core Classes**:
-   - `Main`: Handles the main game loop and screen transitions.
-   - `Slingshot`: Manages bird launching mechanics with trajectory calculations.
-
-2. **Screens**:
-   - `FirstScreen`: Loading screen.
-   - `HomeScreen`: Main menu.
-   - `LevelSelectScreen`: Level selection.
-   - `WinScreen` and `LoseScreen`: End screens for game outcomes.
-   - `SaveSuccessScreen`: Confirmation for successful saves.
-   - `LoadScreen`: Displays saved games.
-
-3. **Game Elements**:
-   - `Bird` (and subclasses): Defines bird behavior and attributes.
-   - `Pig` (and subclasses): Defines pig attributes and damage handling.
-   - `Block` (and subclasses): Handles block destruction upon collisions.
-
-4. **Utility Classes**:
-   - `AssetManager`: Handles textures, sounds, and game assets.
-   - `CollisionDetector`: Detects and processes object collisions.
-
----
-
-## References
-
-1. **OpenAI GPT**:
-   - Assisted in debugging errors and providing optimization suggestions.
-2. **Google**:
-   - Researched UI/UX improvements and Box2D integrations.
-3. **GitHub**:
-   - Referenced sample repositories for dynamic gameplay and serialization implementation.
-4. **YouTube**:
-   - Tutorials on LibGDX setup (GameFromScratch).
-   - Box2D tutorials for understanding dependencies and root causes of errors.
-
----
-
-## Quick Start Guide
-
-#### Launching the Game
 ```bash
-./gradlew lwjgl3:run
+./gradlew lwjgl3:run      # play
+./gradlew core:test       # 30 unit tests (headless Box2D, no window)
 ```
 
-#### Playing the Game
-- Start with the **Home Screen**.
-- Select **Start Game** to proceed to gameplay or **Load Game** to resume a saved session.
-- Use the **Pause Menu** during gameplay to manage your session.
+## How to play
 
-#### Saving Progress
-- Save game states from the **Pause Menu**.
-- Resume saved games from the **Load Screen**.
+| Input | Action |
+|---|---|
+| Drag the bird back, release | Launch. A dotted line shows the exact flight path. |
+| Click or **Space** in flight | Special move (once per bird) |
+| **Esc** / **P** | Pause (volume sliders, aim-line toggle, save, restart) |
+| **R** | Restart the level |
+| **F11** | Toggle fullscreen |
+| Click during the opening fly-over | Skip it |
 
-Enjoy playing **AngryHomies** – a game that blends creativity, logic, and physics for a delightful experience!
+Destroy every pig. Unused birds score 10,000 each; score thresholds give 1–3 stars; winning a
+level unlocks the next.
+
+### Special moves
+
+| Bird | Move | What happens |
+|---|---|---|
+| Red | **Whirlpool Blade** | Brakes and spins in mid-air while a vortex pulls loose pieces in, then cuts forward: everything on the cut line takes heavy damage, is knocked aside and splits at the cut. |
+| Yellow | **Speed Dash** | Doubles speed along its heading with after-images; strongest against wood. |
+| Black | **Bomb** | Short fuse, then a radial blast whose damage falls off with distance to each object's surface. It explodes by itself after landing. Strongest against stone. |
+
+## What changed in v2
+
+- **Physics feel**
+  - fixed 60 Hz timestep with interpolation, so it plays the same on 60/120/144 Hz screens;
+  - stronger gravity;
+  - continuous collision on birds.
+- **Damage from real impacts**
+  - damage follows the impact energy along the contact normal, so resting stacks no longer wear each other down;
+  - toughness and health come from the material;
+  - cracks appear in three stages.
+- **Breaking**
+  - glass shatters into many shards radiating from the hit;
+  - wood splinters along the grain at random cut points;
+  - stone cracks into chunky wedges;
+  - every piece is a textured physics body.
+- **Accurate aim line**
+  - it uses the same integration as Box2D, verified step by step by a unit test;
+  - it stops where the path first hits something.
+- **Screens**
+  - a real async loading bar;
+  - animated menus;
+  - fade and slide transitions between screens;
+  - camera fly-over, zoom-out and screen shake;
+  - hit-stop and slow motion on the last pig;
+  - a results card with a score count-up and stars.
+- **Audio**
+  - 23 generated sound effects plus an ambience loop;
+  - pitch variation, and volume scaled by impact strength;
+  - music crossfades between screens.
+- **Save/load**
+  - JSON slots next to the game (the old build wrote to a Windows OneDrive path);
+  - saves are versioned.
+- **Levels are data:** `assets/levels/level*.json`, converted from the old hard-coded Java levels with the layouts unchanged.
+
+The full review behind these changes (30 bugs with file references, the research notes and the
+plan) is in [`GAME_IMPROVEMENT_PLAN.md`](GAME_IMPROVEMENT_PLAN.md).
+
+## Architecture
+
+```
+Main ── ScreenManager (FBO transitions) ── LoadingScreen / HomeScreen / LevelSelectScreen /
+  │                                         LoadScreen / SettingsScreen / GameplayScreen
+  ├── AudioManager (Sfx enum, music crossfade)      ├── GameSession   (rules state machine)
+  ├── Progress / Settings (Preferences)             ├── LevelWorld    (Box2D, entities, damage,
+  └── SaveManager (JSON)                            │                  blast / vortex / blade)
+                                                    ├── SlingshotController + TrajectoryPredictor
+                                                    ├── CameraController, WorldRenderer
+                                                    ├── Effects, FragmentSystem, ShatterPattern
+                                                    └── Hud, PauseOverlay, ResultOverlay
+Entities: GameEntity → Bird (BirdType + BirdAbility strategy), Pig (PigType), Block (Material)
+```
+
+### Adding a level
+
+Create `assets/levels/level4.json` (coordinates in metres; the world is 192 × 108 with the
+ground at y = 15.5) and raise `LevelDefinition.LEVEL_COUNT`:
+
+```json
+{ "id": 4, "name": "Level 4", "stars": [20000, 35000, 50000],
+  "birds": ["RED", "YELLOW", "BLACK"],
+  "pigs":   [{"type": "KING", "x": 150, "y": 25, "w": 13.5, "h": 12, "density": 2, "radius": 5.75}],
+  "blocks": [{"material": "STONE", "texture": "st_stoneblock.png", "x": 140, "y": 28, "w": 6, "h": 25, "density": 1}] }
+```
+
+## Developer tools
+
+- `tools/convert_levels.py`: the one-off converter from the old Java levels to JSON.
+- `tools/gen_sfx.py`: regenerates every sound effect, with fixed seeds so the output is reproducible.
+- **Demo mode** (`ANGRYHOMIES_DEMO=<folder> ./gradlew lwjgl3:run`):
+  - autoplays a level at low volume, aiming each shot at a pig with the trajectory predictor and firing each special move on contact;
+  - saves window screenshots and an `events.jsonl` audit log: state changes, launches, moves, every hit and break, and entity snapshots;
+  - `ANGRYHOMIES_DEMO_LEVEL` picks the level.
+
+## Credits
+
+- Original game: team 2023135 & 2023296.
+- Sound effects: procedurally generated (`tools/gen_sfx.py`), except `red_attack.mp3`, the pig
+  oink and the menu music from the original project.
+- Bird and pig artwork: Rovio's Angry Birds characters, used here only for a non-commercial
+  course project.
+- UI skins: the "freezing" and default libGDX skins included with the original project.
